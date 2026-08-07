@@ -1,0 +1,12 @@
+data:
+  folder: "data/dataset/UTKFace"
+  batch_size: 32
+  max_kids: 500
+
+model:
+  name: "resnet50"
+
+train:
+  epochs: 20
+  lr: 0.001
+  save_path: "models/saved_models/model.pth"

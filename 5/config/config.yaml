@@ -1,0 +1,28 @@
+dataset:
+  raw_images: data/vehicle-images/resized
+  raw_labels: data/vehicle-labels
+  out_dir: data/vehicle_dataset
+  classes: 
+    0: Car
+    1: Bicycle
+    2: Bus
+    3: Truck
+    4: Motorcycle
+  split:
+    train: 70
+    val: 15
+    test: 15
+
+training:
+  models: ['s', 'm', 'l']
+  epochs: 30
+  imgsz: 640
+  batch: 16
+  optimizer: 'AdamW'
+  lr0: 0.001
+  weight_decay: 0.0005
+  seed: 42
+  project: ./runs
+
+wandb:
+  project_name: "dl-assign5-vehicle-detection"

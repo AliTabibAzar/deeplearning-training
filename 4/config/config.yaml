@@ -1,0 +1,11 @@
+dataset_path: "data/img_align_celeba"
+image_size: 64
+batch_size: 128
+nz: 100
+ngf: 64
+ndf: 64
+epochs: 10
+max_images: 15000
+lr: 0.0002
+beta1: 0.5
+device: "cuda"

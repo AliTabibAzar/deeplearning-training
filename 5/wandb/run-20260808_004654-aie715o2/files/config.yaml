@@ -1,0 +1,46 @@
+_wandb:
+    value:
+        cli_version: 0.28.1
+        e:
+            wb6kal0tb3hlbr5b59b6d6ocejhqwdpk:
+                codePath: scripts\main.py
+                codePathLocal: scripts\main.py
+                cpu_count: 4
+                cpu_count_logical: 4
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "500098396160"
+                        used: "496616570880"
+                email: aliazar499@gmail.com
+                executable: I:\miniconda3\envs\ml\python.exe
+                gpu: NVIDIA GeForce GTX 1070 Ti
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Pascal
+                      cudaCores: 2432
+                      memoryTotal: "8589934592"
+                      name: NVIDIA GeForce GTX 1070 Ti
+                      uuid: GPU-93f45509-1635-7bf2-3371-058510413f91
+                host: DESKTOP-R751JCV
+                memory:
+                    total: "17086595072"
+                os: Windows-10-10.0.19045-SP0
+                program: I:\Projects\hamrah aval\tasks\task 5\offline\5\scripts\main.py
+                python: CPython 3.10.20
+                root: I:\Projects\hamrah aval\tasks\task 5\offline\5
+                startedAt: "2026-08-07T21:16:54.498736Z"
+                writerId: wb6kal0tb3hlbr5b59b6d6ocejhqwdpk
+        m: []
+        python_version: 3.10.20
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "4": 3.10.20
+            "5": 0.28.1
+            "8":
+                - 3
+            "12": 0.28.1
+            "13": windows-amd64

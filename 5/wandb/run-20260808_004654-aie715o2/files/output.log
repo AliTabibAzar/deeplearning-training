@@ -1,0 +1,59 @@
+--- Training YOLOv8-S ---
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8s.pt to 'yolov8s.pt': 100% ━━━━━━━━━━━━ 21.5MB 3.8MB/s 5.7s5.7s<0.1s.2s6
+New https://pypi.org/project/ultralytics/8.4.116 available  Update with 'pip install -U ultralytics'
+Ultralytics 8.4.115  Python-3.10.20 torch-2.7.1+cu118 CUDA:0 (NVIDIA GeForce GTX 1070 Ti, 8192MiB)
+[34m[1mengine\trainer: [0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=16, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=False, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=data/vehicle_dataset\data.yaml, degrees=0.0, deterministic=True, device=, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, end2end=None, epochs=30, erasing=0.4, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.001, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=yolov8s.pt, momentum=0.937, mosaic=1.0, multi_scale=0.0, name=yolov8_s, nbs=64, nms=False, opset=None, optimize=False, optimizer=AdamW, overlap_mask=True, patience=100, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=./runs, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=I:\Projects\hamrah aval\tasks\task 5\offline\5\runs\detect\runs\yolov8_s, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+Traceback (most recent call last):
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\engine\trainer.py", line 792, in get_dataset
+    data = check_det_dataset(self.args.data)
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\data\utils.py", line 569, in check_det_dataset
+    raise FileNotFoundError(m)
+FileNotFoundError: Dataset 'data/vehicle_dataset/data.yaml' images not found, missing path 'I:\Projects\hamrah aval\tasks\task 5\offline\5\data\vehicle_dataset\images\validation'
+Note dataset download directory is 'C:\Users\htc u12\Desktop\AI-Aimbot-main\AI-Aimbot-main\datasets'. You can update this in 'C:\Users\htc u12\AppData\Roaming\Ultralytics\settings.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "I:\Projects\hamrah aval\tasks\task 5\offline\5\scripts\main.py", line 31, in <module>
+    main()
+  File "I:\Projects\hamrah aval\tasks\task 5\offline\5\scripts\main.py", line 20, in main
+    run_training(cfg)
+  File "I:\Projects\hamrah aval\tasks\task 5\offline\5\scripts\train.py", line 19, in run_training
+    model.train(
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\engine\model.py", line 816, in train
+    self.trainer = (trainer or self._smart_load("trainer"))(overrides=args, _callbacks=self.callbacks)
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\models\yolo\detect\train.py", line 62, in __init__
+    super().__init__(cfg, overrides, _callbacks)
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\engine\trainer.py", line 185, in __init__
+    self.data = self.get_dataset()
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\engine\trainer.py", line 796, in get_dataset
+    raise RuntimeError(emojis(f"Dataset '{clean_url(self.args.data)}' error ❌ {e}")) from e
+RuntimeError: Dataset 'data/vehicle_dataset/data.yaml' error  Dataset 'data/vehicle_dataset/data.yaml' images not found, missing path 'I:\Projects\hamrah aval\tasks\task 5\offline\5\data\vehicle_dataset\images\validation'
+Note dataset download directory is 'C:\Users\htc u12\Desktop\AI-Aimbot-main\AI-Aimbot-main\datasets'. You can update this in 'C:\Users\htc u12\AppData\Roaming\Ultralytics\settings.json'
+Traceback (most recent call last):
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\engine\trainer.py", line 792, in get_dataset
+    data = check_det_dataset(self.args.data)
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\data\utils.py", line 569, in check_det_dataset
+    raise FileNotFoundError(m)
+FileNotFoundError: Dataset 'data/vehicle_dataset/data.yaml' images not found, missing path 'I:\Projects\hamrah aval\tasks\task 5\offline\5\data\vehicle_dataset\images\validation'
+Note dataset download directory is 'C:\Users\htc u12\Desktop\AI-Aimbot-main\AI-Aimbot-main\datasets'. You can update this in 'C:\Users\htc u12\AppData\Roaming\Ultralytics\settings.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "I:\Projects\hamrah aval\tasks\task 5\offline\5\scripts\main.py", line 31, in <module>
+    main()
+  File "I:\Projects\hamrah aval\tasks\task 5\offline\5\scripts\main.py", line 20, in main
+    run_training(cfg)
+  File "I:\Projects\hamrah aval\tasks\task 5\offline\5\scripts\train.py", line 19, in run_training
+    model.train(
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\engine\model.py", line 816, in train
+    self.trainer = (trainer or self._smart_load("trainer"))(overrides=args, _callbacks=self.callbacks)
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\models\yolo\detect\train.py", line 62, in __init__
+    super().__init__(cfg, overrides, _callbacks)
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\engine\trainer.py", line 185, in __init__
+    self.data = self.get_dataset()
+  File "I:\miniconda3\envs\ml\lib\site-packages\ultralytics\engine\trainer.py", line 796, in get_dataset
+    raise RuntimeError(emojis(f"Dataset '{clean_url(self.args.data)}' error ❌ {e}")) from e
+RuntimeError: Dataset 'data/vehicle_dataset/data.yaml' error  Dataset 'data/vehicle_dataset/data.yaml' images not found, missing path 'I:\Projects\hamrah aval\tasks\task 5\offline\5\data\vehicle_dataset\images\validation'
+Note dataset download directory is 'C:\Users\htc u12\Desktop\AI-Aimbot-main\AI-Aimbot-main\datasets'. You can update this in 'C:\Users\htc u12\AppData\Roaming\Ultralytics\settings.json'

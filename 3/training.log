@@ -1,0 +1,56 @@
+2026-08-07 11:00:08,481 [INFO] __main__: device: cuda
+2026-08-07 11:00:08,548 [INFO] data.data_loader: found 23705 valid images
+2026-08-07 11:00:08,552 [INFO] data.data_loader: gender count: male=12391, female=11314
+2026-08-07 11:00:08,553 [INFO] data.data_loader: race distribution: {0: 10078, 2: 3434, 1: 4526, 3: 3975, 4: 1692}
+2026-08-07 11:00:08,584 [INFO] data.data_loader: after balancing: 22311 images
+2026-08-07 11:00:08,592 [INFO] __main__: dataloaders are ready
+2026-08-07 11:00:09,688 [INFO] __main__: model created: resnet50
+2026-08-07 11:00:09,870 [INFO] scripts.train: training started
+2026-08-07 11:02:00,631 [INFO] scripts.train: epoch 1: train_loss=357.3681 | val_loss=261.5209 | val_mae=12.07
+2026-08-07 11:02:00,773 [INFO] scripts.train: saved best model with val_mae=12.07
+2026-08-07 11:03:50,346 [INFO] scripts.train: epoch 2: train_loss=247.2891 | val_loss=212.5746 | val_mae=11.20
+2026-08-07 11:03:50,596 [INFO] scripts.train: saved best model with val_mae=11.20
+2026-08-07 11:05:40,152 [INFO] scripts.train: epoch 3: train_loss=218.6898 | val_loss=198.9251 | val_mae=11.00
+2026-08-07 11:05:40,305 [INFO] scripts.train: saved best model with val_mae=11.00
+2026-08-07 11:07:29,917 [INFO] scripts.train: epoch 4: train_loss=206.9620 | val_loss=188.1572 | val_mae=10.69
+2026-08-07 11:07:30,070 [INFO] scripts.train: saved best model with val_mae=10.69
+2026-08-07 11:09:19,700 [INFO] scripts.train: epoch 5: train_loss=197.3355 | val_loss=183.5002 | val_mae=10.49
+2026-08-07 11:09:19,846 [INFO] scripts.train: saved best model with val_mae=10.49
+2026-08-07 11:11:09,764 [INFO] scripts.train: epoch 6: train_loss=193.0401 | val_loss=179.4117 | val_mae=10.42
+2026-08-07 11:11:09,923 [INFO] scripts.train: saved best model with val_mae=10.42
+2026-08-07 11:12:59,711 [INFO] scripts.train: epoch 7: train_loss=189.2352 | val_loss=176.7112 | val_mae=10.34
+2026-08-07 11:12:59,886 [INFO] scripts.train: saved best model with val_mae=10.34
+2026-08-07 11:14:49,559 [INFO] scripts.train: epoch 8: train_loss=185.7060 | val_loss=175.4010 | val_mae=10.28
+2026-08-07 11:14:49,715 [INFO] scripts.train: saved best model with val_mae=10.28
+2026-08-07 11:16:39,485 [INFO] scripts.train: epoch 9: train_loss=182.6938 | val_loss=173.1386 | val_mae=10.26
+2026-08-07 11:16:39,649 [INFO] scripts.train: saved best model with val_mae=10.26
+2026-08-07 11:18:29,411 [INFO] scripts.train: epoch 10: train_loss=180.9359 | val_loss=174.2069 | val_mae=10.35
+2026-08-07 11:20:19,202 [INFO] scripts.train: epoch 11: train_loss=182.0445 | val_loss=170.5436 | val_mae=10.22
+2026-08-07 11:20:19,348 [INFO] scripts.train: saved best model with val_mae=10.22
+2026-08-07 11:22:09,326 [INFO] scripts.train: epoch 12: train_loss=180.5727 | val_loss=172.7906 | val_mae=10.33
+2026-08-07 11:23:59,033 [INFO] scripts.train: epoch 13: train_loss=179.3779 | val_loss=173.2931 | val_mae=10.36
+2026-08-07 11:25:48,627 [INFO] scripts.train: epoch 14: train_loss=176.1938 | val_loss=167.0659 | val_mae=10.07
+2026-08-07 11:25:48,788 [INFO] scripts.train: saved best model with val_mae=10.07
+2026-08-07 11:27:38,791 [INFO] scripts.train: epoch 15: train_loss=176.1405 | val_loss=165.8462 | val_mae=10.02
+2026-08-07 11:27:38,944 [INFO] scripts.train: saved best model with val_mae=10.02
+2026-08-07 11:29:28,799 [INFO] scripts.train: epoch 16: train_loss=174.2693 | val_loss=167.5047 | val_mae=10.01
+2026-08-07 11:29:28,956 [INFO] scripts.train: saved best model with val_mae=10.01
+2026-08-07 11:31:18,577 [INFO] scripts.train: epoch 17: train_loss=174.5205 | val_loss=164.7627 | val_mae=9.97
+2026-08-07 11:31:18,727 [INFO] scripts.train: saved best model with val_mae=9.97
+2026-08-07 11:33:08,249 [INFO] scripts.train: epoch 18: train_loss=173.9207 | val_loss=165.4376 | val_mae=9.95
+2026-08-07 11:33:08,402 [INFO] scripts.train: saved best model with val_mae=9.95
+2026-08-07 11:34:58,410 [INFO] scripts.train: epoch 19: train_loss=172.3301 | val_loss=164.2136 | val_mae=10.03
+2026-08-07 11:36:47,993 [INFO] scripts.train: epoch 20: train_loss=171.6183 | val_loss=162.2296 | val_mae=9.93
+2026-08-07 11:36:48,260 [INFO] scripts.train: saved best model with val_mae=9.93
+2026-08-07 11:36:48,260 [INFO] scripts.train: training finished
+2026-08-07 11:36:48,261 [INFO] scripts.evaluate: evaluation started
+2026-08-07 11:37:09,211 [INFO] scripts.evaluate: final MAE: 9.93
+2026-08-07 11:37:09,211 [INFO] __main__: finished
+2026-08-07 20:04:17,345 [INFO] __main__: Generating plots from training log...
+2026-08-07 20:04:17,347 [INFO] utils.visualization: Parsed 20 epochs from log file
+2026-08-07 20:04:21,442 [INFO] utils.visualization: Saved training curves to: I:\Projects\hamrah aval\tasks\task 5\offline\3\training_curves.png
+2026-08-07 20:04:21,442 [INFO] __main__: Done! Check: I:\Projects\hamrah aval\tasks\task 5\offline\3\training_curves.png
+2026-08-07 20:08:19,905 [INFO] __main__: Using device: cuda
+2026-08-07 20:08:19,928 [INFO] __main__: Loading model from: I:\Projects\hamrah aval\tasks\task 5\offline\3\models\saved_models\model.pth
+2026-08-07 20:08:22,188 [INFO] __main__: Loading evaluation data...
+2026-08-07 20:08:22,252 [INFO] __main__: Running inference on 741 batches...
